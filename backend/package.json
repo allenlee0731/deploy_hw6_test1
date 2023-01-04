@@ -20,8 +20,7 @@
     "mongoose": "^6.7.1"
   },
   "scripts": {
-    "server": "nodemon src/server.js --ext js --exec babel-node",
-    "deploy": "NODE_ENV=production babel-node server.js",
-    "deploy-win": "set NODE_ENV=production&&babel-node server.js"
+    "server": "nodemon src/server.js --ext js --watch src --exec babel-node",
+    "deploy": "NODE_ENV=production babel-node src/server.js"
   }
 }
